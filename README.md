@@ -6,9 +6,6 @@ A **full-stack Smart Inventory Management System** built using the **MERN stack*
 This system helps manage products, monitor stock levels, track expiry dates, and visualize inventory analytics through an interactive dashboard.
 
 ---
-
-## Features
-
 ### Authentication
 - Secure login using **JWT (JSON Web Tokens)**
 - Protected routes
@@ -62,32 +59,54 @@ This system helps manage products, monitor stock levels, track expiry dates, and
 
 ## Project Structure
 
+```text
 frontend/
 ├── public/
-│ └── index.html
+│   └── index.html
+│
 ├── src/
-│ ├── pages/
-│ │ ├── Login.js
-│ │ ├── Dashboard.js
-│ │ ├── Inventory.js
-│ │ └── AddProduct.js
-│ ├── components/
-│ │ └── Navbar.js
-│ ├── services/
-│ │ └── api.js
-│ ├── styling/
-│ │ ├── login.css
-│ │ ├── dashboard.css
-│ │ ├── inventory.css
-│ │ └── addproduct.css
-│ ├── App.js
-│ └── index.js
-
-
+│   ├── assets/
+│   │   └── images/
+│   │
+│   ├── components/
+│   │   ├── common/
+│   │   │   └── Navbar.jsx
+│   │   └── ProtectedRoute.jsx
+│   │
+│   ├── pages/
+│   │   ├── Auth/
+│   │   │   └── Login.jsx
+│   │   ├── Dashboard/
+│   │   │   └── Dashboard.jsx
+│   │   └── Inventory/
+│   │       ├── Inventory.jsx
+│   │       └── AddProduct.jsx
+│   │
+│   ├── services/
+│   │   └── api.js
+│   │
+│   ├── styles/
+│   │   ├── auth.css
+│   │   ├── dashboard.css
+│   │   ├── inventory.css
+│   │   └── addProduct.css
+│   │
+│   ├── utils/
+│   │   └── auth.js
+│   │
+│   ├── App.jsx
+│   └── index.js
+│
+├── .env
+├── package.json
+└── README.md
 
 ---
 
 ## Installation & Setup
+Install Node.js
+Installl MongoDB Shell
+Install MongoDB compass
 
 ### 1.Clone the repository
 git clone https://github.com/your-username/smart-inventory-system.git
